@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鎮海密令-地點到底是哪裡?</title>
+    <style>
+    .box{
+width: 400px;
+background-color: rgb(255, 255, 255);
+margin: auto
+    }
+    .column{
+        width: 200px;
+        background-color: rgb(255, 255, 255);
+        float: left;
+        margin: auto
+ 
+    }
+    h2{
+        width: 700px;
+        margin: auto
+    }
+    </style>
+   
+</head>
+<body>
+ <h1> 
+    <div class="box">
+        <div class="column"></div>
+        </h1>
+<h2>
+    <img src="page2-3.jpg" alt="老照片">
+        <div class="box">
+                <input class="input-box" type="text" placeholder="請填入兩字">
+                <input type="button" value="答案在這點我看看!" onclick="getInputVal()">
+            </div>
+
+</h2>
+
+
+
+    </div>
+    
+        <p class="content"></p>
+        <script>
+            function getInputVal(){
+                const inputBox = document.querySelectorAll('.input-box')[0],
+                      content = document.querySelectorAll('.content')[0];
+                
+                let inputVal = inputBox.value;
+                if(inputVal === "海義"){
+                    content.innerHTML = window.location.href="page4.html";
+                }
+                else if(inputVal === "天后宮"){
+                    alert("往上看一點哦!!?")
+                }
+                
+                else{
+                    alert('答案好像不是這樣呢!!');
+                }
+            }
+        </script>
+
+
+
+
+</body>
+</html>
